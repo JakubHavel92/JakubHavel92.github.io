@@ -142,7 +142,7 @@
   display: flex;
   justify-content:space-between; 
   align-items: center; 
-  font-size: 1.2.5rem;
+  font-size: 1.5rem;
   padding: 0 25px 5px 25px;
 }
 .menu-item:nth-child(odd) {
@@ -163,7 +163,17 @@ footer {
   font-size: 1.5rem;
   padding: 40px 20px; 
 }
-
+@media screen and (max-width: 360px) {
+  .menu-item {
+  font-size: 1rem;
+  }
+  .contact-item {
+    font-size: 1.25rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 480px) {
   .hero-title, .hero-subtitle { 
   border-radius: 7px;
@@ -188,9 +198,6 @@ footer {
   }
   .photo-gallery {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .menu-item { 
-  font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 786px) {
