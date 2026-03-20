@@ -142,7 +142,7 @@
   display: flex;
   justify-content:space-between; 
   align-items: center; 
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0 25px 5px 25px;
 }
 .menu-item:nth-child(odd) {
@@ -150,7 +150,7 @@
 }
 .contact-item {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   padding: 10px;
 }
 .contact-map {
@@ -160,20 +160,10 @@ footer {
   background: linear-gradient(#3a3a3a, #1f1f1f);
   color: white;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 40px 20px; 
 }
-@media screen and (max-width: 400px) {
-  .menu-item {
-  font-size: 1rem;
-  }
-  .contact-item {
-    font-size: 1.25rem;
-  }
-  footer {
-    font-size: 1rem;
-  }
-}
+
 @media screen and (min-width: 480px) {
   .hero-title, .hero-subtitle { 
   border-radius: 7px;
