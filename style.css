@@ -32,7 +32,6 @@ html {
   background-image: url("./images/Hero_Background.webp");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   padding: 10px;
   gap: 15px;
   min-height: 100vh;
