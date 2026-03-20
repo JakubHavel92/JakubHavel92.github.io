@@ -163,7 +163,7 @@ footer {
   background: linear-gradient(#3a3a3a, #1f1f1f);
   color: white;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 40px 20px; 
 }
 
@@ -193,6 +193,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .menu-item {
+  font-size: 1rem;
+  }
+  footer {
   font-size: 1rem;
   }
 }
