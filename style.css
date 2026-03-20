@@ -1,0 +1,260 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:0;
+  margin:0;
+}
+.disclaimer {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  z-index: 999;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center; 
+  background-image: url("./images/Hero_Background.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 10px;
+  gap: 15px;
+}
+
+.hero-logo {
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px black;
+}
+
+.hero-title, .hero-subtitle {
+  color: white;
+  text-shadow: 3px 3px 3px rgb(65, 36, 19);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-social a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  box-shadow: 1px 1px 5px black;
+  padding: 6px 12px;
+  border-radius: 50%;
+  background-color: rgb(65, 36, 19);
+  transition: 0.3s;
+}
+
+
+.phone:hover {
+  background-color: #25D366;
+}
+
+.e-mail:hover {
+  background-color: #EA4335;
+}
+
+.facebook:hover {
+  background-color: #1877F2;
+}
+.instagram:hover {
+  background: #E4405F;
+  background: linear-gradient(
+  45deg,
+  #F58529,
+  #DD2A7B,
+  #8134AF,
+  #515BD4
+); 
+}
+
+.history {
+  background-image: url("./images/History_Background.webp");
+  background-size: cover;
+  background-position: center;  
+
+}
+
+.history h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.history p {
+  width: 85%;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.menu h2, .contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.menu h3 {
+  font-size: 2rem;
+  padding: 5px 0 5px 25px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content:space-between; 
+  align-items: center; 
+  font-size: 1.5rem;
+  padding: 0 25px 5px 25px;
+}
+.menu-item:nth-child(odd) {
+  background-color: whitesmoke;
+}
+.contact-item {
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 10px;
+}
+.contact-map {
+  width: 100%;
+}
+footer {
+  background: linear-gradient(#3a3a3a, #1f1f1f);
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 40px 20px; 
+}
+
+@media screen and (min-width: 480px) {
+  .hero-title, .hero-subtitle { 
+  border-radius: 7px;
+  }
+  .hero-title {
+  font-size: 4rem;
+}
+  .hero-subtitle {
+  font-size: 3rem;
+}
+  .hero-social a {
+  font-size: 3rem;
+  padding: 6px 15px;
+  }
+  .history p {
+  width: 70%;
+  font-size: 1.5rem;
+  }
+  .history h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  }
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 786px) {
+  .hero-title, .hero-subtitle { 
+  border-radius: 10px;
+  }
+  .hero-title {
+  font-size: 5rem;
+  }
+  .hero-subtitle {
+  font-size: 4rem;
+  }
+  .hero-social a {
+  font-size: 4rem;
+  padding: 6px 18px;
+  }
+  .history p {
+  width: 60%;
+  font-size: 1.75rem;
+  }
+  .history h2 {
+  text-align: center;
+  font-size: 3rem;
+  }
+   .photo-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .photo {
+    transition: filter 0.2s ease;
+  }
+  .photo:hover {
+  transform: scale(0.95);
+  transition: 0.2s;
+  filter: brightness(0.7);
+  cursor: pointer;
+  }
+  .menu h2, .contact h2 {
+  font-size: 4rem;
+}
+}
+
+@media screen and (min-width:1124px) {
+  .menu-title {
+    grid-area: menu-title;
+  }
+  .menu-coffee {
+    grid-area: menu-coffee;
+  }
+  .menu-desserts {
+    grid-area: menu-desserts;
+  }
+  .menu {
+    display: grid;
+    grid-template-areas: 
+    'menu-title menu-title'
+    'menu-coffee menu-desserts';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-map {
+    max-width: 100%;
+  }
+}
